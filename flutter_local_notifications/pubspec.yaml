@@ -1,4 +1,4 @@
-name: flutter_local_notifications
+name: shiva_local_notifications
 description: A cross platform plugin for displaying and scheduling local
   notifications for Flutter applications with the ability to customise for each
   platform.
