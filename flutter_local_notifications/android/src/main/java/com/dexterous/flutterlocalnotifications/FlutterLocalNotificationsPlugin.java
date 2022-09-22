@@ -1650,7 +1650,7 @@ public class FlutterLocalNotificationsPlugin
 
     this.callback = callback;
 
-    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+/*    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
       String permission = Manifest.permission.POST_NOTIFICATIONS;
       boolean permissionGranted =
           ContextCompat.checkSelfPermission(mainActivity, permission)
@@ -1665,9 +1665,9 @@ public class FlutterLocalNotificationsPlugin
         permissionRequestInProgress = false;
       }
     } else {
-      NotificationManagerCompat notificationManager = NotificationManagerCompat.from(mainActivity);
-      this.callback.complete(notificationManager.areNotificationsEnabled());
-    }
+    }*/
+    NotificationManagerCompat notificationManager = NotificationManagerCompat.from(mainActivity);
+    this.callback.complete(notificationManager.areNotificationsEnabled());
   }
 
   @Override
